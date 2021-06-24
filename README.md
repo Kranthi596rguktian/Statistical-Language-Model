@@ -32,4 +32,5 @@
           Need to create a function for caliculating more than one frequency counts
 
 ### 📍📍 4.**`Perplexity Caliculation on all 5 smoothing techniques`**
-   ![Final Output: Perplexity scores](https://github.com/Kranthi596rguktian/Statistical-Language-Model/blob/main/Final%20Perplexity%20scores.png)
+ #### Final Results:
+ ![Final Output: Perplexity scores](https://github.com/Kranthi596rguktian/Statistical-Language-Model/blob/main/Final%20Perplexity%20scores.png)
