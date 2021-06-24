@@ -33,5 +33,5 @@
 
 ### 📍📍 4.**`Perplexity Caliculation on all 5 smoothing techniques`**
  #### Final Results:
- ![Final Output: Perplexity scores](https://github.com/Kranthi596rguktian/Statistical-Language-Model/blob/main/Final%20Perplexity%20scores.png)
+ ![Final Output: Perplexity score](https://github.com/Kranthi596rguktian/Statistical-Language-Model/blob/main/Final%20Perplexity%20scores.png)
 
