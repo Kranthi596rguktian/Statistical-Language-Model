@@ -1,75 +1,37 @@
-# Steps To Follow
-#### 1.Read the Text File
 
-       Read Telugu_data_v2.txt file
-
-   
+#                  `Build a language model by using statistical technique`
 
 
+## Steps to follow:
 
-#### 2.Preprocessing on Text Data
+### 📍📍 1.**`Read the Text file`**  
+   - **-  Here we read the Text file as in the form of paragraphs**
+   - If we want to change the text file, then just change the path location of the needed text file
+   - NOTE: Text file should be in the form of paragraphs. If it would be in the sentence form then there is a no need of sentensification code block in this code.
+ 
+### 📍📍 2.**`Pre-Processing Text data`**
+   - **-  Clean the data using regular expressions**
+   - **-  Sentencification**
+   - **-  Spliting the data into Train,Test and Valid**
+   - **-  Creating Unigrams,Bigrams and Trigrams For given sentences**
+   - **-  Finding Unigrams,Bigrams and Trigrams Counts for Test Set**
+  
+### 📍📍 3.**`Applying Smoothing Techniques on tri-grams`**
+   - **-  Maximum Likelyhood estimation**
+          For this we required count of the n-grams
+   - **-  Add-one Smoothing**
+          For this we required count of the n-grams and also Unique Vocabulary size of the N-grams
+   - **-  Add-k Smoothing**
+          For this we required count of the n-grams and also Unique Vocabulary size of the N-grams and also choos the K value
+   - **-  Good Turing Smoothing**
+          For this we required the count of frequencies of N-grams    
+   - **-  Kneyserney Smoothing**
+          Need to create a function for finding "given word" similar n-grams, function for finding "Predicted word" similar 
+          n-grams and count of the n-grams and also Unique Vocabulary size and Total Vocabulary size of the N-grams          
+   - **-  Written Bell Smoothing**   
+          Need to create a function for caliculating more than one frequency counts
 
-         Here we find the challenges and we tokenized the data using regular  
-         expressions.
+### 📍📍 4.**`Perplexity Caliculation on all 5 smoothing techniques`**
+ #### Final Results:
+ ![Final Output: Perplexity score](https://github.com/Kranthi596rguktian/Statistical-Language-Model/blob/main/Final%20Perplexity%20scores.png)
 
-         sentencification
-    
-         Next divided the data into train,test and valid.
-
-         Divided data into unigram,bigram,trigram upto ngrams.
-    
-         calulate the frequencies of unigram,bigram upto ngrams of train data.
-
-#### 3.Applying Smoothing Techniques on Test data.
-
-     a)Laplace smoothing:
-        
-          In this we required count of ngrams and n-1 grams and number of unique
-          words.
-        
-     b)Additive Smoothing:
-    
-         In this we required ngram,n-1 gram counts,unique words and k-value.
-        
-     c)Good Turing Smoothing:
-    
-         we need frequency of frequencies of ngrams.
-        
-     d)Kneyser-ney Smoothing:
-    
-         predicting the next word using the frequencies of previous words and
-         continuation words.
-    
-     e)Witten-bell Smoothing:
-    
-         create a function for calculating more than 1 frequency counts
-        
-#### 4)Applying neural language model on train,test and valid data.
-     
-      
-
-# How To Execute
-
-#### 1) For Preprocessing 
-
-          Run challenges.ipynb
-          
-             output:tokens
-          Run libraries.ipynb
-            output: tokens (based on different inbuilt libraries)
-             
-        if you want to add more challenges means you can add in challenges one.
-        
-#### 2)For Language modelling 
-
-         run ngrams.ipynb
-         
-                 output: perplexity scores and probabilities of all smoothing
-                         techniques. 
-                         
-#### 3)For Neural language model 
-
-         run -python model.py <filepath>
-         
-               output: perplexity scores
-    
