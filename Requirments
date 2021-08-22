@@ -1,0 +1,14 @@
+1.	Re: This is useful to preprocessing the text data  to extract particular patterns
+version 2.2.1
+
+2.	Pandas: To read the files
+version 1.0.5
+
+3.	Numpy: for mathematical operations
+version 1.18.5
+
+4.	Sk_learn: it useful to divide the data into train, test and valid by using train_test_split function
+version 0.23.1
+
+5.	IPython: To read the images of formulas
+version 7.16.1
